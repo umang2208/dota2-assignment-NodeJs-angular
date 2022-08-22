@@ -19,38 +19,13 @@ input {
 	background-color: rgb(69, 63, 63);
 }
 
-.dropdown {
-	position: relative;
-	display: inline-block;
-}
-
-.dropdown-menu {
-	display: none;
-	position: absolute;
-	background-color: rgb(75, 34, 34);
-	font-size: small;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	z-index: 1;
-}
-
-.dropdown-menu a {
-	color: white;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-}
-
-.navbar-toggler-icon {
-	color: white;
-}
 
 .UserStyle {
 	cursor: pointer;
 	transition: transform .5s;
 	background-color: rgb(36, 24, 24);
 	width: 211px;
-	
+
 }
 
 .UserStyle:hover {
@@ -82,49 +57,12 @@ input {
 	height: 70px;
 }
 
-.dropdown:hover .dropdown-menu {
-	display: block;
-	color: black;
-	border: 1px solid white;
-}
-
-.nav-link {
-	color: white;
-	font-size: 18px;
-	font-family: "Reaver", serif;
-	font-weight: 600;
-	letter-spacing: 3px;
-}
-
-.dropdown-item {
-	color: white;
-
-}
-
-.dropdown-item:hover {
-	background-color: black;
-}
-
-.dropdown-toggle:hover {
-	border: 1px solid white;
-	border-bottom: none;
-}
-
-.navbar-toggler-icon {
-	color: white;
-}
-
 .icon {
 	background-color: white;
 	width: 30px;
 	height: 3px;
 	line-height: 1px;
 	margin-top: 5px;
-}
-
-.active {
-	border-bottom: 2px solid orange;
-	width: fit-content;
 }
 
 .iconImg {

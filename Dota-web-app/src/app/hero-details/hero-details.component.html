@@ -7,21 +7,22 @@
             <p> {{HeroesDetails?.npe_desc_loc}}</p>
             <p class="d-flex flex-row">{{HeroesDetails?.hype_loc}} </p>
         </div>
-        <div class="col-6 editImg align-self-cente">
+        <div class="col-6 editImg align-self-cente" >
             <!-- <video class="editImg" 
             [poster]="getImage(HeroesDetails?.name_loc|lowercase)"
             autoplay="" preload="auto" loop="" playsinline=""><source type="video/webm" 
 
             [src]="getVideo(HeroesDetails?.name_loc|lowercase)"
-            >-->
-            <img class="editImg img-fluid" [src]="getImage(HeroesDetails?.name_loc|lowercase)"
+            > -->
+            <img class="editImg img-fluid" src="{{Image}} "
                 onerror="this.src='../../assets/Images/assignmentImg.png'" alt="alternative">
-          <!--  </video> -->
+           <!-- </video> -->
             <!-- <video class="editImg" 
-            poster="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/alchemist.png"
+           poster="{{Image}}"
              autoplay="" preload="auto" loop="" playsinline=""><source type="video/webm" 
-                src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/alchemist.webm">
-                <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/alchemist.png">
+            src="{{videoUrl}}"
+             >
+                <img src="{{Image}}">
             </video> -->
            
         </div>

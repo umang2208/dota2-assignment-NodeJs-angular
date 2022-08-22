@@ -37,3 +37,7 @@
     line-height: 1px;
     margin-top: 5px;
   }
+  .active {
+    border-bottom: 2px solid orange;
+    width: fit-content;
+  }

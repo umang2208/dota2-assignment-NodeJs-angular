@@ -39,6 +39,8 @@ export class HerosComponent implements OnInit {
   ImgSrc(name: string) {
     let newName = '';
     newName = name.replace('-', '');
+    newName = newName.replace(' ','_');
+
     return `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/${newName}.png`;
   }
   GoTODetails(id: number) {
