@@ -1,0 +1,39 @@
+.LogoDesign{
+    width: 200px;
+    height: 70px;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    color: black;
+    border: 1px solid white;
+  }
+  .nav-link {
+    color: white;
+    font-size: 20px;
+  }
+
+  .dropdown-menu{
+    background-color: rgb(92, 75, 75);
+    font-size: small;
+  }
+  .dropdown-item{
+    color: white;
+    
+  }
+  .dropdown-item:hover{
+    background-color: black;
+  }
+  .dropdown-toggle:hover{
+    border: 1px solid white;
+    border-bottom: none;
+  }
+  .navbar-toggler-icon{
+    color: white;
+  }
+  .icon{
+    background-color: white;
+    width: 30px;
+    height: 3px;
+    line-height: 1px;
+    margin-top: 5px;
+  }
