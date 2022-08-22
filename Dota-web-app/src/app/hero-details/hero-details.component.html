@@ -2,20 +2,28 @@
 
 <div class="container-fluid">
     <div class="row ">
-        <div class="col-4 offset-1 align-self-cente mt-5">
+        <div class="col-lg-3 order-lg-first col-md-12 order-md-last order-sm-last offset-1 align-self-cente mt-5">
             <h1>{{HeroesDetails?.name_loc}}</h1>
             <p> {{HeroesDetails?.npe_desc_loc}}</p>
             <p class="d-flex flex-row">{{HeroesDetails?.hype_loc}} </p>
         </div>
-        <div class="col-6 editImg align-self-cente" >
+        <div class="col-lg-7 order-lg-last col-md-7 order-md-first order-sm-first align-self-cente" >
+           
+            <video class="editImg" autoplay loop  src="{{videoUrl}}"
+            onerror="this.src=`https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/axe.webm`"
+             alt = "alternative">
+            <img class=" img-fluid" src="{{Image}} "
+                onerror="this.src='https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/axe.webm'"
+                 alt="alternative">
+            </video>
             <!-- <video class="editImg" 
             [poster]="getImage(HeroesDetails?.name_loc|lowercase)"
             autoplay="" preload="auto" loop="" playsinline=""><source type="video/webm" 
 
             [src]="getVideo(HeroesDetails?.name_loc|lowercase)"
             > -->
-            <img class="editImg img-fluid" src="{{Image}} "
-                onerror="this.src='../../assets/Images/assignmentImg.png'" alt="alternative">
+            <!-- <img class="editImg img-fluid" src="{{Image}} "
+                onerror="this.src='../../assets/Images/assignmentImg.png'" alt="alternative"> -->
            <!-- </video> -->
             <!-- <video class="editImg" 
            poster="{{Image}}"
