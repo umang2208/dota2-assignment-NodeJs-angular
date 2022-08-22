@@ -24,12 +24,11 @@ export class HerosComponent implements OnInit {
     this.getData(this.Dlang);
   }
 
-//   getData1(lang: string) {
-//     this.Dlang = lang;
-//   }
-  getData(lang:string) {
-    this.Dlang = lang
-	
+  //   getData1(lang: string) {
+  //     this.Dlang = lang;
+  //   }
+  getData(lang: string) {
+    this.Dlang = lang;
     console.log(lang);
     this.backendService.getData(this.Dlang).subscribe((data: any) => {
       // console.log(JSON.parse(data).result.data.heroes);
@@ -45,8 +44,7 @@ export class HerosComponent implements OnInit {
   GoTODetails(id: number) {
     this.router.navigate([`heroDetails/${id}/${this.Dlang}`]);
   }
-  callSerach(){
-	console.log(this.serachValue,this.HeroesData[0].name_loc);
-	
+  callSerach() {
+    console.log(this.serachValue, this.HeroesData[0].name_loc);
   }
 }

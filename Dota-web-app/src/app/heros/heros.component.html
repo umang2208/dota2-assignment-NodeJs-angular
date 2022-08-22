@@ -37,7 +37,7 @@
 					aria-haspopup="true" aria-expanded="false">
 					Select Language
 				</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<div class="dropdown-menu scrol" aria-labelledby="navbarDropdown">
 					<a class="dropdown-item" href="#" (click)="getData('english')">English</a>
 					<a class="dropdown-item" href="#" (click)="getData('spanish')">Español - España (Spanish -
 						Spain)</a>
@@ -89,13 +89,8 @@
 				</div>
 
 			</li>
-
 		</ul>
-
-
-
 	</div>
-
 </nav>
 
 <div class="container">
@@ -136,7 +131,7 @@
 
 	</div>
 	<div class="row">
-		<div class="card UserStyle m-2" *ngFor="let hero of HeroesData" style="width: 13rem;height: 11rem;">
+		<div class="card UserStyle m-2" *ngFor="let hero of HeroesData" >
 			<!-- <div *ngIf="serachValue === '' || hero.name_loc.toLowerCase().includes(serachValue)"> -->
 			<div class="card-img-caption" (click)="GoTODetails(hero.id)">
 
