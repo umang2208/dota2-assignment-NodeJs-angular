@@ -50,6 +50,7 @@ input {
 	transition: transform .5s;
 	background-color: rgb(36, 24, 24);
 	width: 211px;
+	
 }
 
 .UserStyle:hover {

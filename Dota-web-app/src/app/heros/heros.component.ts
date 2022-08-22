@@ -28,7 +28,7 @@ export class HerosComponent implements OnInit {
   //     this.Dlang = lang;
   //   }
   getData(lang: string) {
-    this.Dlang = lang;
+    this.Dlang = "english";
     console.log(lang);
     this.backendService.getData(this.Dlang).subscribe((data: any) => {
       // console.log(JSON.parse(data).result.data.heroes);

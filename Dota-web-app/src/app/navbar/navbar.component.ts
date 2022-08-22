@@ -11,7 +11,4 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  getData(lang:string){
-    console.log(lang);
-  }
 }
