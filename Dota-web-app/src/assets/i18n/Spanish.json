@@ -1,0 +1,18 @@
+{
+    "hero":{
+        "title": "ELIGE TU HÉROE",
+        "desc": "Desde tácticos mágicos hasta brutos feroces y pícaros astutos, el grupo de héroes de Dota 2 es enorme e ilimitadamente diverso. Desata increíbles habilidades y devastadores ultimates en tu camino hacia la victoria.",
+        "navbar":{
+            "Game": "Juego",
+            "HEROS": "HÉROES",
+            "NEWS": "NOTICIAS",
+            "ESPORTS" :"DEPORTES ELECTRÓNICOS",
+            "SELECT LANGUAGE": "SELECCIONE EL IDIOMA"
+
+        },
+        "FILTER":"FILTRAR",
+        "ATTRIBUTE": "ATRIBUTO",
+        "COMPLEXITY":"COMPLEJIDAD"
+    }
+
+}

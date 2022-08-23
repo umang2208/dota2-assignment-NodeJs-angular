@@ -2,6 +2,7 @@ import { LowerCasePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { BackendServiceService } from '../MyService/backend-service.service';
+import {TranslateService} from '@ngx-translate/core'
 
 @Component({
   selector: 'app-heros',
@@ -16,17 +17,17 @@ export class HerosComponent implements OnInit {
   img = `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png`;
   constructor(
     private backendService: BackendServiceService,
-    private router: Router
-  ) {}
+    private router: Router,
+   
+  ) {
+    
+  }
 
   ngOnInit(): void {
     // this.getData1(this.Dlang);
     this.getData(this.Dlang);
   }
 
-  //   getData1(lang: string) {
-  //     this.Dlang = lang;
-  //   }
   getData(lang: string) {
     this.Dlang = "english";
     console.log(lang);

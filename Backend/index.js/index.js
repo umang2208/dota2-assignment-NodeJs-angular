@@ -14,23 +14,19 @@ app.use(bodyParser.json());
 
 const request = require("request");
 app.get("/getData/:value", (req, res) => {
-  //   console.log(req.params.value);
  	const lang = req.params.value;
-	// console.log(lang);
+	
 
   request(
     `https://www.dota2.com/datafeed/herolist?language=${lang}`,
     function (error, response, body) {
-      console.error("error:", error); // Print the error if one occurred
-    //   console.log(response);
-      //   res.send(response);
+      console.error("error:", error); 
       res.json(body);
     }
   );
 });
 
 app.get("/getHeroData/:value/:lang", (req, res) => {
-	//   console.log(req.params.value);
 	const id = req.params.value;
 	const lang = req.params.lang;
 	console.log(lang);
@@ -38,9 +34,7 @@ app.get("/getHeroData/:value/:lang", (req, res) => {
 	request(
 	  `https://www.dota2.com/datafeed/herodata?language=${lang}&hero_id=${id}`,
 	  function (error, response, body) {
-		console.error("error:", error); // Print the error if one occurred
-		// console.log(response);
-		//   res.send(response);
+		console.error("error:", error); 
 		res.json(body);
 		  return;
 		

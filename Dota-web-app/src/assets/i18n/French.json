@@ -1,0 +1,18 @@
+{
+    "hero":{
+        "title": "CHOISISSEZ VOTRE HÉROS",
+        "desc": "Des tacticiens magiques aux brutes féroces et aux voleurs rusés, le pool de héros de Dota 2 est immense et d'une diversité illimitée. Libérez des capacités incroyables et des ultimes dévastateurs sur votre chemin vers la victoire.",
+        "navbar":{
+            "Game": "JEU",
+            "HEROS": "HÉROS",
+            "NEWS": "NOUVELLES",
+            "ESPORTS" :"ESPORTS",
+            "SELECT LANGUAGE": "CHOISIR LA LANGUE"
+
+        },
+        "FILTER":"FILTRE",
+        "ATTRIBUTE": "ATTRIBUT",
+        "COMPLEXITY":"COMPLEXITÉ"
+    }
+
+}
